@@ -1,0 +1,8 @@
+lis = list(map(int,input().split()))
+count=0
+for i in range(len(lis)):
+    for j in range(len(lis)-i-1):
+        if(lis[j]>lis[j+1]):
+            lis[j],lis[j+1]=lis[j+1],lis[j]
+            count+=1
+print(count)
